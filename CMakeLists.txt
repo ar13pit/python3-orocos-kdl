@@ -18,7 +18,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include_directories(${Boost_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS} ${orocos_kdl_INCLUDE_DIRS})
 
-add_library(PyKDL SHARED python_orocos_kdl/PyKDL.cpp)
+add_library(PyKDL SHARED src/PyKDL.cpp)
 set_target_properties(PyKDL PROPERTIES PREFIX "")
 target_link_libraries(PyKDL ${Boost_LIBRARIES} ${orocos_kdl_LIBRARY})
 
