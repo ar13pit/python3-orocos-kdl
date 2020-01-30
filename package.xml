@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>python3_orocos_kdl</name>
+  <version>0.1.0</version>
+  <description>
+    This package contains the Boost.Python bindings PyKDL for the orocos Kinematics and Dynamics
+    Library (KDL)
+  </description>
+  <maintainer email="ar13pit@gmail.com">Arpit Aggarwal</maintainer>
+  <url type="repository">https://github.com/ar13pit/python3_orocos_kdl</url>
+  <license>GPL</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <depend>orocos_kdl</depend>
+  <depend>boost</depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+
+</package>
